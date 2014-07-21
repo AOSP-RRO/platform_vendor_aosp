@@ -97,8 +97,14 @@ PRODUCT_PACKAGES += \
     DashClock
 
 #    orionFileManager removed until updated
-
 # Extra tools
+
+# Chromium prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
+
+# CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
@@ -140,10 +146,6 @@ ifndef ORION_BUILD_TYPE
     ORION_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 endif
 
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-endif
 
 # Set all versions
 orion_VERSION := orion-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(ORION_BUILD_TYPE)$(ORION_POSTFIX)
