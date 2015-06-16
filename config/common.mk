@@ -134,7 +134,12 @@ PRODUCT_COPY_FILES += \
 
 # Layers Manager
 PRODUCT_COPY_FILES += \
-vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+vendor/orion/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+
+# SuperSU
+PRODUCT_COPY_FILES += \
+	vendor/orion/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+	vendor/orion/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Versioning System
 # orionLP first version.
