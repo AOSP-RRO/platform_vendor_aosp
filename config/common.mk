@@ -90,13 +90,13 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    orionCenter \
-    orionLauncher \
+    SlimCenter \
+    SlimLauncher \
     LatinIME \
     BluetoothExt \
     DashClock
 
-#    orionFileManager removed until updated
+# orionFileManager removed until updated
 # Extra tools
 
 # Chromium prebuilt
