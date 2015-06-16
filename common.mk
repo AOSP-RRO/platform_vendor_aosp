@@ -49,10 +49,15 @@ PRODUCT_COPY_FILES += \
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# Layers Manager
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
 
 # Misc packages
 PRODUCT_PACKAGES += \
