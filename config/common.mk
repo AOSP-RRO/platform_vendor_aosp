@@ -132,6 +132,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/orion/overlay/common
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 
+# Layers Manager
+PRODUCT_COPY_FILES += \
+vendor/tipsy/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+
 # Versioning System
 # orionLP first version.
 PRODUCT_VERSION_MAJOR = 5.1.1
