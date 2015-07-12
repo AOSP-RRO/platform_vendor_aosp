@@ -65,10 +65,6 @@ PRODUCT_PACKAGES += \
     libemoji \
     Terminal
 
-# Custom CM packages
-PRODUCT_PACKAGES += \
-    CMFileManager \
-    Eleven
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
