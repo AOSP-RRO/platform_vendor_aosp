@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     libemoji \
     Terminal
 
+# Custom stuff
+PRODUCT_PACKAGES += \
+    Apollo
+
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
