@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Custom stuff
 PRODUCT_PACKAGES += \
-    Apollo
+    Auro
 
 
 # Stagefright FFMPEG plugin
