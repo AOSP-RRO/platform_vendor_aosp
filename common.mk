@@ -87,9 +87,7 @@ PRODUCT_PACKAGES += \
     strace \
     Terminal
 
-# Custom stuff
-PRODUCT_PACKAGES += \
-    Auro
+
 
 
 # Stagefright FFMPEG plugin
