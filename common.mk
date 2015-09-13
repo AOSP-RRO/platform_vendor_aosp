@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 # Layers Manager
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/app/layersmanager.apk:system/app/layersmanager.apk
+    
+# Custom stuff
+PRODUCT_PACKAGES += \
+    Apollo
 
 # Misc packages
 PRODUCT_PACKAGES += \
