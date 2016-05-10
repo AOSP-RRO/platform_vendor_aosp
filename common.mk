@@ -1,3 +1,4 @@
+include vendor/aosp/configs/themes_common.mk
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
